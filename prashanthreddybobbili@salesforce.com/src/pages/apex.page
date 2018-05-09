@@ -1,0 +1,14 @@
+<apex:page controller="apex"  title="apex" >
+     <apex:form >
+         <apex:pageBlock >
+             <apex:pageBlockButtons location="top">
+                 <apex:commandButton value="submit" action="{!create}"/>
+                 <apex:commandButton value="reset" action="{!reset}"/>
+             </apex:pageBlockButtons>
+                     acount name:{!acc.name}
+             account phone:{!acc.phone}
+             account industry:{!acc.industry}
+                                                             
+         </apex:pageBlock>
+  </apex:form>
+</apex:page>

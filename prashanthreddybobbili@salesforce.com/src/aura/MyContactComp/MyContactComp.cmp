@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" controller="MyContactsController" access="global">
+    <aura:handler name="init" action="{!c.getContactsList}" value="{!this}" />
+    <aura:attribute name="contactList" type="List" />
+    <lightning:card title="Contacts">
+      <p class ="slds-p-horizontal_small">
+         <aura:iteration items="{!v.contactList}" var="cnt">
+           <lightning:recordViewForm recordId="{!cnt.Id}" objectApiName="Contact" >
+              <div class="slds-box slds-theme_default">
+                  <lightning:outputField fieldName="Name"/>
+                  <lightning:outputField fieldName="Phone"/>
+		          <lightning:button value="Id" label="Get Contact" onclick="{!c.newContact}" />
+              </div>
+           </lightning:recordViewForm>
+           <br/>
+         </aura:iteration>
+      </p>
+      <aura:set attribute="actions">
+          <lightning:button label="New Contact" onclick="{!c.newContact}" />
+      </aura:set>
+    </lightning:card>
+</aura:component>

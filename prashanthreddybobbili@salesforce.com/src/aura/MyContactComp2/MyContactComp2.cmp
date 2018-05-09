@@ -1,0 +1,36 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="MyContactsController2" >
+    <aura:handler name="init" action="{!c.getContactsList}" value="{!this}" />
+    <aura:attribute name="contactList" type="List" />
+    <lightning:card title="App2">
+      <p class ="slds-p-horizontal_small">
+       <div aura:id="recordViewForm">
+         <aura:iteration items="{!v.contactList}" var="cnt">
+          <lightning:recordViewForm recordId="{!cnt.Id}" objectApiName="Contact" >
+              <div class="slds-box slds-theme_default">
+                  <lightning:outputField fieldName="Name"/>
+                  <lightning:outputField fieldName="Phone"/>
+                  <lightning:outputField fieldName="Email"/>
+		          <lightning:button variant="brand" label="Edit Contact Std" value="{!cnt.Id}" aura:id="cntId" onclick="{!c.editContactStd}" />
+		          <lightning:button variant="brand" label="Get Contact Std" value="{!cnt.Id}" aura:id="cntId" onclick="{!c.getContactStd}" />
+              </div>
+          </lightning:recordViewForm>
+        </aura:iteration>
+       </div>
+       <br/>
+       <div aura:id="recordEditForm" class="formHide">
+        <aura:iteration items="{!v.contactList}" var="cnt">
+		  <div class="slds-box slds-theme_default">
+        	<lightning:input value="{!cnt.FirstName}"/>
+            <lightning:input value="{!cnt.LastName}"/>
+            <lightning:input type="email" value="{!cnt.Email}"/>
+            <lightning:input type="tel" value="{!cnt.Phone}" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}"/> 
+          </div>
+        </aura:iteration>
+       </div>
+      </p>
+      <aura:set attribute="actions">
+          <lightning:button label="New Contact" name="new" onclick="{!c.newContact}" />
+          <lightning:button variant="brand" label="Edit Contacts" name='edit' onclick="{!c.editcontact}" />
+      </aura:set>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,17 @@
+<apex:page controller="pr">
+  <apex:form >
+ <apex:pageBlock title="page3" >
+ <apex:pageBlockButtons >
+ <apex:commandButton value="prev" action="{!pa2}"/>
+ <apex:commandButton value="next" action="{!pa4}"/>
+ </apex:pageBlockButtons>
+ <apex:pageBlockSection >
+ <apex:inputField value="{!o.name}"/>
+ <apex:inputField value="{!o.stagename}"/>
+ <apex:inputField value="{!o.closedate}"/>
+ <apex:inputField value="{!o.amount}"/>
+ <apex:inputField value="{!o.type}"/>
+ </apex:pageBlockSection>
+ </apex:pageBlock>
+ </apex:form>
+</apex:page>

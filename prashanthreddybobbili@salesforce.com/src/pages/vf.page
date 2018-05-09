@@ -1,0 +1,13 @@
+<apex:page >
+    <apex:outputLabel >kjdfdkfdskjfkjdsfds</apex:outputLabel>
+     <script>
+        function show(){
+             alert('ok');
+        }
+        </script>
+       
+        <apex:form >
+                  <apex:commandButton value="ffff" onclick="show()"/>
+        </apex:form>
+    
+</apex:page>

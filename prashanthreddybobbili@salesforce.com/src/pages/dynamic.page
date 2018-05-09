@@ -1,0 +1,30 @@
+<apex:page >
+    <apex:form >
+    <apex:pageblock title="dynamic example">
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                 <apex:selectList size="1">
+            <apex:selectOption >
+            </apex:selectOption>
+            </apex:selectList>
+            </apex:pageBlockSectionItem>
+            <apex:panelGrid title="panelgrid" id="pg" columns="3">
+            <apex:pageBlockSectionItem >
+                <apex:selectList size="1" multiselect="true">
+                <apex:selectOption ></apex:selectOption>
+                </apex:selectList>
+            </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:commandButton value="add"/>
+                <apex:commandButton value="remove"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                     <apex:selectList size="1" multiselect="true">
+                <apex:selectOption ></apex:selectOption>
+                </apex:selectList>
+                </apex:pageBlockSectionItem>
+            </apex:panelGrid>
+        </apex:pageBlockSection>
+         </apex:pageblock>
+    </apex:form>
+</apex:page>

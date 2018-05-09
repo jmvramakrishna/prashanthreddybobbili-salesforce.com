@@ -1,0 +1,7 @@
+({
+	myAction : function(component) {
+		
+        
+
+	}
+})

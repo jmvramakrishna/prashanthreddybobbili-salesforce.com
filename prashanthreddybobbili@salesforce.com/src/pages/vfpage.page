@@ -1,0 +1,20 @@
+<apex:page sidebar="false" showHeader="true" >
+    <apex:form >
+    <apex:pageBlock >
+        <apex:panelGrid >
+            <apex:selectList multiselect="true">
+              <apex:selectOption itemLabel="cvcvsvsv" itemValue="fsfsfdsf" > </apex:selectOption>
+                <apex:selectOption itemLabel="cvcvsdaf" itemValue="fsfsffdsaff" > </apex:selectOption>
+                <apex:selectOption itemLabel="cvcvsvfdafda" itemValue="fsffcdsafcdsasf" > </apex:selectOption>
+            </apex:selectList>
+        </apex:panelGrid><br/> <br/>
+        <apex:panelGrid >
+            <apex:selectList multiselect="true">
+              <apex:selectOption itemLabel="cv" itemValue="fs" > </apex:selectOption>
+                <apex:selectOption itemLabel="cdsds" itemValue="fsf" > </apex:selectOption>
+                <apex:selectOption itemLabel="cvaA" itemValue="fsff" > </apex:selectOption>
+            </apex:selectList>
+        </apex:panelGrid>
+        </apex:pageBlock> 
+    </apex:form>
+</apex:page>

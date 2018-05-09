@@ -1,0 +1,17 @@
+<apex:page standardController="answers__c" extensions="quset">
+    <apex:form >
+      <apex:pageblock >
+          <apex:outputLabel > answers name</apex:outputLabel>
+          <apex:inputField value="{!answers__c.name}"/>
+        <apex:pageBlockTable value="{!ques}" var="item">
+           <apex:column value="{!item.name}"/>
+            <apex:column headerValue="answers"> 
+                <apex:inputText />
+            </apex:column>
+        </apex:pageBlockTable>
+          <apex:pageBlockButtons location="bottom">
+          <apex:commandButton value="save" action="{!saving}"/>
+          </apex:pageBlockButtons>
+      </apex:pageblock>
+    </apex:form>
+</apex:page>

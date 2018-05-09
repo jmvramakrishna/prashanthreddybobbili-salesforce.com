@@ -1,0 +1,36 @@
+<apex:page standardController="answers__c" extensions="pa" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+            <apex:inputField value="{!answers__c.Name}" required="true"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="top" >
+                <apex:commandButton value="inserting answers" action="{!processSelected}" rerender="table2"/>
+            </apex:pageBlockButtons>
+              <apex:pageblockSection title="All questions & answers" collapsible="false" columns="2">
+              <apex:pageBlockTable value="{!wList}" var="ap" id="table" title="All Accounts">
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:inputCheckbox onclick="selectAllCheckboxes(this,'inputId')"/>
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!ap.selected}" id="inputId"/>
+                    </apex:column>
+                    <apex:column value="{!ap.acc.Name}" />
+                    <apex:column headerValue="ans">
+                        <apex:inputField value="{!answers__c.response__c}" />
+                        
+                    </apex:column>
+                    <apex:commandButton />
+                </apex:pageBlockTable>
+ 
+                <apex:pageBlockTable value="{!selectedAccounts}" var="c" id="table2" title="Selected Accounts">
+                    <apex:column value="{!c.Name}" headerValue="Account Name"/>
+                    <apex:column >
+                        <apex:outputField value="{!answers__c.response__c}"/>
+                    </apex:column>
+                </apex:pageBlockTable>
+ 
+            </apex:pageblockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

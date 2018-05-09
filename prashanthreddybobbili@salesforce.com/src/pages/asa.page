@@ -1,0 +1,11 @@
+<apex:page >
+     <apex:outputLabel >kjdfdkfdskjfkjdsfds</apex:outputLabel>
+     <script>
+        function show(){
+             alert('ok');
+        }
+        </script>
+        <apex:form >
+            <apex:inputText onchange="show()"/>
+        </apex:form>
+</apex:page>

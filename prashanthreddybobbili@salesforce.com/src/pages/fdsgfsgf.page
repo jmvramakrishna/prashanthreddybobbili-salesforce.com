@@ -1,0 +1,11 @@
+<apex:page id="dd">
+    <apex:form id="ff">
+        <apex:inputText id="dd" onchange="show()"/>
+        <script>
+        function show(){
+     var aa= getelementbyid('{!$Component.hh}').value; 
+        alert(aa);
+    }
+        </script>
+    </apex:form>
+</apex:page>

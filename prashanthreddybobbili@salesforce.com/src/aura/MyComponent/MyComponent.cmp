@@ -1,0 +1,24 @@
+<!--c:MyCounter-->
+<aura:component access="global">
+    <ltng:require scripts="{!$Resource.counter}"
+                  afterScriptsLoaded="{!c.getValue}"/>
+    <aura:attribute name="value" type="Integer"/>
+    
+    <h1>MyCounter</h1>
+    <p>{!v.value}</p>
+    <lightning:button label="Get Value" onclick="{!c.getValue}"/>
+    <lightning:button label="Increment" onclick="{!c.increment}"/>
+    <br/>
+    <br/>
+    <br/>
+<!--c:recoverableError-->
+    <p>Click the button to trigger the controller to throw an error.</p>
+    <div aura:id="div1"></div>
+
+    <lightning:button label="Throw an Error" onclick="{!c.throwErrorForKicks}"/>
+    <br/>
+    <br/>
+<ltng:require scripts="{!$Resource.chart}" 
+              afterScriptsLoaded="{!c.setup}"/>
+<canvas aura:id="chart" id="myChart" width="400" height="400"/>
+</aura:component>

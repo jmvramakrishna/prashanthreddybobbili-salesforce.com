@@ -1,0 +1,17 @@
+<apex:page controller="pr">
+  <apex:form >
+ <apex:pageBlock title="page2">
+ <apex:pageBlockButtons location="top" >
+ <apex:commandButton value="prev" action="{!pa1}"/>
+ <apex:commandButton value="next" action="{!pa3}"/>
+ </apex:pageBlockButtons>
+ <apex:pageBlockSection >
+ <apex:inputField value="{!c.firstname}"/>
+ <apex:inputField value="{!c.lastname}"/>
+ <apex:inputField value="{!c.email}"/>
+ <apex:inputField value="{!c.fax}"/>
+ <apex:inputField value="{!c.phone}"/>
+ </apex:pageBlockSection>
+ </apex:pageBlock>
+ </apex:form>
+</apex:page>

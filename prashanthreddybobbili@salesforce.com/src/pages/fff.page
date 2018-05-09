@@ -1,0 +1,10 @@
+<apex:page >
+    <apex:form >
+    <apex:pageBlock title="hi">
+        <apex:pageBlockSection title="ff"></apex:pageBlockSection>
+        <apex:pageBlockSection title="ff2"></apex:pageBlockSection>
+        <apex:pageBlockSection title="ff3"></apex:pageBlockSection>
+        <apex:pageBlockSection title="ff4"></apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

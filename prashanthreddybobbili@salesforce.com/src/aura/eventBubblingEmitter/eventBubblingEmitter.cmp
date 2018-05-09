@@ -1,0 +1,6 @@
+<!--c:eventBubblingEmitter-->
+<aura:component >
+    <aura:registerEvent name="bubblingEvent" type="c:compEvent" />
+    <aura:handler name="bubblingEvent" event="c:compEvent" action="{!c.handleBubbling}" />
+    <lightning:button onclick="{!c.fireEvent}" label="Start Bubbling"/>
+</aura:component>

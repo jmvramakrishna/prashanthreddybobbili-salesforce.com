@@ -1,0 +1,14 @@
+<apex:page title="sections">
+    <apex:form >
+        <apex:pageBlock title="example" helpTitle=" one" helpUrl="wwww.facebook.com">
+          <apex:pageBlockSection title="section1" columns="4" collapsible="false">
+           <apex:outputLabel value=" enter name">
+           </apex:outputLabel>
+           <apex:inputText />
+           <apex:outputLabel value="enter phone"> 
+           </apex:outputLabel>
+           <apex:inputText />
+         </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

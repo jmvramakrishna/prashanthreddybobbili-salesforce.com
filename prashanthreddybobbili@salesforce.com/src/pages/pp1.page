@@ -1,0 +1,6 @@
+<apex:page standardController="Account" >
+    account name:{!Account.Name};
+      account phone:{!Account.Phone}; 
+    account industry:{!Account.Industry};
+    
+</apex:page>

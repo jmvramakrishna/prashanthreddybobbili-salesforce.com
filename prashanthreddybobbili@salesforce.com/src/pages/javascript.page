@@ -1,0 +1,13 @@
+<apex:page >
+  <apex:form >
+  <apex:pageBlock >
+  <apex:inputText id="ok" onchange="show()"/>
+  <script>
+  function show(){
+  alert{'hi'}
+  }
+  </script>
+  </apex:pageblock>  
+  <apex:inputText id="kk" onchange="show()"/>
+  </apex:form>
+</apex:page>

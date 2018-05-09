@@ -1,0 +1,15 @@
+<apex:page controller="picklistex">
+    <apex:form >
+        <apex:pageBlock >
+  citynames:
+      <apex:selectList size="1" value="{!selected}"  >
+          <apex:actionSupport event="onchange"  action="{!add}" />
+           <apex:selectOption itemLabel="-none-" itemValue=""></apex:selectOption>
+          <apex:selectOption itemLabel="hyderabad" itemValue="telangana"></apex:selectOption>
+          <apex:selectOption itemLabel="banglore" itemValue="karnataka"></apex:selectOption>
+          <apex:selectOption itemLabel="chennai" itemValue="tamilnadu"></apex:selectOption>
+          </apex:selectList>
+      <br/><br/>{!result}
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

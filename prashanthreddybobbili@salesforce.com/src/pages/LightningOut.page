@@ -1,0 +1,14 @@
+<apex:page >
+<apex:includeLightning />
+<div id ="test1"/>
+<script>
+	$Lightning.use("c:LightningOutApp",function(){
+   		$Lightning.createComponent("c:MyContactComp2",
+        	{"recordId":"0010I00001pEILn"},
+            "test1",
+			function(cmp){
+                //            	alert("this is sample one");
+			});
+    });
+</script>
+</apex:page>

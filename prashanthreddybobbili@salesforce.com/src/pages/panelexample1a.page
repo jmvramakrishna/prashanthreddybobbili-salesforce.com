@@ -1,0 +1,19 @@
+<apex:page controller="panelexample2">
+    <apex:form >
+    <apex:panelGrid columns="3" id="one">
+        <apex:selectList size="1" multiselect="true" value="{!addele}">
+        <apex:selectOption value="{!soptions}"> </apex:selectOption>
+        </apex:selectList>
+        </apex:panelGrid>
+        <apex:panelGrid columns="1">
+            <apex:commandButton value="add" action="{!add}" reRender="one"/><br/><br/>
+            <apex:commandButton value="remove" action="{!remove}" reRender="one"/><br/><br/>
+        </apex:panelGrid>
+        <apex:panelGrid >
+        <apex:selectList size="1" multiselect="true" styleClass="box" value="{!removeele}">
+        <apex:selectOption value="{!soptions}"></apex:selectOption>
+        </apex:selectList>
+        </apex:panelGrid>
+    </apex:form>
+    
+</apex:page>

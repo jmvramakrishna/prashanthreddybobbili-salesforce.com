@@ -1,0 +1,6 @@
+<aura:component >
+          <div >
+		          <lightning:button variant="brand" label="Edit Contact Std" value="Click Me" aura:id="cntId" onclick="{!c.showAlert}" />
+		          <lightning:button variant="brand" label="Get Contact Std" value="Click Me Too" aura:id="cntId" onclick="{!c.showAlert}" />
+          </div>
+</aura:component>

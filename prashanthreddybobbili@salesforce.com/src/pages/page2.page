@@ -1,0 +1,7 @@
+<apex:page controller="buttonexample" >
+    <apex:form >
+    <apex:pageBlock title="jjj">
+       <apex:commandButton value="jkkkj"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

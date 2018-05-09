@@ -1,0 +1,11 @@
+<apex:page >
+    <apex:sectionHeader title="dev" subtitle="dev2" help="www.face.com"/>
+    <apex:form >
+        <apex:pageBlock title="dev3" helpTitle="dadw" helpUrl="www.csdf">
+        <apex:pageBlockButtons location="top" >
+        <apex:commandButton value="save"/>
+           <apex:commandButton value="del"/> 
+        </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

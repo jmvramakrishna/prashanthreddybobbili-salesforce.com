@@ -1,0 +1,49 @@
+<!--c:parentExpr-->
+<aura:component >
+    {!$Browser.isTablet} <br/>
+    {!$Browser.isPhone} <br/>
+    {!$Browser.isAndroid} <br/>
+    {!$Browser.formFactor} <br/>
+    {!$Locale.country} <br/>
+    {!$Locale.currency} <br/>
+    {!$Locale.currencyCode} <br/>
+    {!$Locale.decimal} <br/>
+    {!$Locale.firstDayOfWeek} <br/>
+    {!$Locale.grouping} <br/>
+    {!$Locale.isEasternNameStyle} <br/>
+    {!$Locale.labelForToday} <br/>
+    {!$Locale.language} <br/>
+    {!$Locale.langLocale} <br/>
+    {!$Locale.nameOfMonths} <br/>
+    {!$Locale.nameOfWeekdays} <br/>
+    {!$Locale.timezone} <br/>
+    {!$Locale.userLocaleCountry} <br/>
+    {!$Locale.userLocaleLang} <br/>
+    {!$Locale.variant} <br/>
+    <br/><br/><br/>
+    
+    <img src="{!$Resource.generic_profile_svg}"/>
+    <img src="{!$Resource.SLDSv2 + '/assets/images/avatar1.jpg'}"/>
+
+<br/><br/><br/>
+    
+    <aura:attribute name="parentAttr" type="String" default="parent attribute"/>
+
+    <!-- Instantiate the child component -->
+    <c:childExpr childAttr="{!v.parentAttr}" />
+       
+    <p>parentExpr parentAttr: {!v.parentAttr}</p>
+    <p><lightning:button label="Update parentAttr"
+          onclick="{!c.updateParentAttr}"/></p>
+    <br/>
+    <br/>
+<lightning:input type="number" name="myNumber" label="Pick a Number:" value="54" />    
+<lightning:input type="number" name="myNumber" label="{!$Label.Number.PickOne}" />
+    <br/>
+    <br/>
+    
+    <aura:attribute name="_label" 
+                    type="String" 
+                    default="My Label"/>
+    <lightning:button label="Set Label" aura:id="button1" onclick="{!c.setLabel}"/>
+</aura:component>

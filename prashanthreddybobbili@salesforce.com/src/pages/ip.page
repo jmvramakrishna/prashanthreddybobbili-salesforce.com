@@ -1,0 +1,9 @@
+<apex:page >
+    <apex:form >
+    <apex:pageBlock >
+        <apex:outputLabel value="address"/>
+        <apex:inputTextarea richtext="true" required="true" disabled="false" rows="4" cols="30"/>
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

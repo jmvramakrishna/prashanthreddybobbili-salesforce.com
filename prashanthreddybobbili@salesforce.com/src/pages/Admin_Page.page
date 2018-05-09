@@ -1,0 +1,14 @@
+<apex:page controller="AdminController">
+    <apex:form >
+    <apex:pageBlock title="Admin Page">
+        <apex:pageBlockSection >
+            <apex:commandButton value="check status"/>
+			<img src="/img/samples/light_green.gif"/> 
+        </apex:pageBlockSection>
+        <apex:pageBlockSection >
+            <apex:commandButton value="proceed"/>
+            <apex:commandButton value="cancel"/>
+        </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

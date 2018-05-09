@@ -1,0 +1,9 @@
+<apex:page controller="navi">
+    <apex:form >
+   <apex:pageBlock >
+    <apex:pageBlockButtons >
+      <apex:commandButton action="{!step1" value="Save"/>
+   </apex:pageBlockButtons>
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

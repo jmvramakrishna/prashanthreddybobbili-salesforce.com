@@ -1,0 +1,28 @@
+<apex:page controller="listexamlexample2" >
+    <apex:form >
+    <apex:pageBlock title="listexample">
+        <apex:pageBlockButtons location="top">
+            <apex:commandButton value="add" action="{!addme}"/>
+            <apex:commandButton value="addat" action="{!addat}"/>
+            <apex:commandButton value="remove" action="{!removeat}"/>
+            <apex:commandButton value="setat" action="{!setat}"/>
+            <apex:commandButton value="sort" action="{!sort}"/>
+            <apex:commandButton value="clear" action="{!clear}"/>
+            </apex:pageBlockButtons>
+        <apex:pageBlockSection >
+            <apex:inputText value="{!newacc.Name}"/>
+            <apex:inputText value="{!newacc.Industry}"/>
+           <apex:pageBlockSectionItem >
+              <apex:outputLabel value="index"> </apex:outputLabel> 
+               <apex:inputText value="{!index}"/>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+       </apex:pageBlock>
+        <apex:pageBlock >
+        <apex:pageBlockTable var="a" value="{!accs}"> 
+            <apex:column value="{!a.Name}"/>
+            <apex:column value="{!a.Industry}"/>
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

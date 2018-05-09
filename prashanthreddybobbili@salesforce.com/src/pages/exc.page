@@ -1,0 +1,10 @@
+<apex:page controller="exa">
+    <apex:form >
+        <apex:pageblock title="qweq" id="one">
+        <apex:pageBlockButtons location="bottom">
+            <apex:commandButton value="sub" action="{!create}" reRender="one"/>
+            <apex:commandButton value="res" action="{!reset}" reRender="one" />
+            </apex:pageBlockButtons>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

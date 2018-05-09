@@ -1,0 +1,13 @@
+<apex:page controller="l1">
+    <apex:form >
+        <apex:pageblock title="listexample" >
+           <apex:pageBlockButtons location="top">
+               <apex:inputText value="{!ee}"/>
+               <apex:commandButton value="adddat" action="{!add}"/>
+            </apex:pageBlockButtons>
+                <apex:pageblocktable var="a" value="{!aa}" >
+                    <apex:column value="{!a}"/>
+            </apex:pageblocktable>
+         </apex:pageblock>
+    </apex:form>
+</apex:page>

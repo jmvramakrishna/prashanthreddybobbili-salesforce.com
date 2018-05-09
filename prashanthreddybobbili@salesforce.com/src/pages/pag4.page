@@ -1,0 +1,35 @@
+<apex:page controller="pr">
+ <apex:form >
+ <apex:pageBlock title="review" >
+ <apex:pageBlockButtons >
+ <apex:commandButton value="page3" action="{!pa3}"/>
+ <apex:commandButton value="page1" action="{!pa1}"/>
+ <apex:commandButton value="page2" action="{!pa2}"/>
+ </apex:pageBlockButtons>
+ <apex:pageBlockSection title="account details " columns="1" collapsible="false">
+ <apex:outputfield value="{!a.name}"/>
+ <apex:outputfield value="{!a.type}"/>
+ <apex:outputfield value="{!a.industry}"/>
+ <apex:outputfield value="{!a.phone}"/>
+ <apex:outputfield value="{!a.fax}"/>
+ </apex:pageBlockSection>
+ 
+ <apex:pageBlockSection title="contact details"  collapsible="false" columns="1" >
+ <apex:outputField value="{!c.firstname}"/>
+ <apex:outputField value="{!c.lastname}"/>
+ <apex:outputField value="{!c.email}"/>
+ <apex:outputField value="{!c.phone}"/>
+ <apex:outputField value="{!c.fax}"/>
+ </apex:pageBlockSection>
+ 
+ <apex:pageBlockSection title="opportunity details" collapsible="false" columns="1">
+ <apex:outputField value="{!o.name}"/>
+ <apex:outputField value="{!o.stagename}"/>
+ <apex:outputField value="{!o.closedate}"/>
+ <apex:outputField value="{!o.amount}"/>
+ <apex:outputField value="{!o.type}"/>
+ </apex:pageBlockSection>
+ 
+ </apex:pageBlock>
+ </apex:form>
+</apex:page>

@@ -1,0 +1,9 @@
+<apex:page standardController="bpr__c">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:outputLabel >experince in wilco company </apex:outputLabel>
+        <apex:inputText value="{!bpr__c.exp_in__c}" />
+        <apex:commandButton value="submit" action="{!save}"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

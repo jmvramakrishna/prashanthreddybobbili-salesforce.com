@@ -1,0 +1,14 @@
+<apex:page controller="ex5b">
+    <apex:form >
+    <apex:page > 
+        <apex:pageBlock title="employee details" id="one">
+           <apex:pageblockbuttons location="top" >
+               <apex:commandButton value="submit" action="{!create}"/>
+                 <apex:commandButton value="reset" action="{!reset}"/>
+               </apex:pageblockbuttons>
+            
+        </apex:pageBlock>
+       </apex:page>
+     
+    </apex:form>
+</apex:page>

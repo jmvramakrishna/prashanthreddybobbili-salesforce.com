@@ -1,0 +1,8 @@
+<!--c:eventBubblingGrandchild-->
+<aura:component >
+    <aura:handler name="bubblingEvent" event="c:compEvent" action="{!c.handleBubbling}" phase="capture"/>
+
+    <div class="grandchild">
+        <c:eventBubblingEmitter />
+    </div>
+</aura:component>

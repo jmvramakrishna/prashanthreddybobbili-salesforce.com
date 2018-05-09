@@ -1,0 +1,4 @@
+<apex:page >
+    <apex:sectionheader title="employee"  help="/apex/employee"> </apex:sectionheader>
+    <apex:pageBlock title="employee form" helpTitle="moreinfo" helpUrl="/apex/moreinfo"> </apex:pageBlock>
+</apex:page>

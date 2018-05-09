@@ -1,0 +1,8 @@
+<apex:page controller="buttonexample" >
+    <apex:form >
+    <apex:pageblock title="hi">
+        </apex:pageblock>
+        
+  
+    </apex:form>
+</apex:page>

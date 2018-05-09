@@ -1,0 +1,9 @@
+<apex:page standardController="account">
+<apex:form >
+<apex:inlineEditSupport >
+<apex:outputLabel >fdksjfkmdsf</apex:outputLabel>
+<apex:outputField value="{!account.name}"/>
+</apex:inlineEditSupport>
+</apex:form>
+  
+</apex:page>

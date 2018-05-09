@@ -1,0 +1,7 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId">
+    <lightning:card title="Mothers">
+        <aura:set attribute="actions">
+	        <lightning:button label="Update Mother" onclick="{!c.updateMother}" />
+        </aura:set>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,21 @@
+<apex:page controller="buttonexample">
+    <apex:form >
+    <apex:pageBlock title="button label">
+        <apex:commandButton value="mybutton"/>
+        </apex:pageBlock>
+          <apex:pageBlock title="button witth action :this will">
+        <apex:commandButton value="mybutton" action="{!show}"/> 
+              {!result}
+        </apex:pageBlock>
+         <apex:pageBlock title="button witth action :this will take you to another vf page">
+        <apex:commandButton value="mybutton" action="{!mypage}"/>
+             </apex:pageBlock>
+        <apex:pageBlock title="button witth action :this will take you to another vf page">
+        <apex:commandButton value="mybutton" action="{!mypage1}"/>
+             </apex:pageBlock>
+         <apex:pageBlock title="button witth disabled action">
+        <apex:commandButton value="mybutton" disabled="true"/>
+             </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>

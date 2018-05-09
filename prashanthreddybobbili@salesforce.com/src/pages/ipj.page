@@ -1,0 +1,8 @@
+<apex:page >
+    <apex:form >
+    <apex:pageBlock title="wee">
+       <apex:inputText />
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

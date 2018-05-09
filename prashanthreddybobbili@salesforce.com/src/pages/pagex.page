@@ -1,0 +1,10 @@
+<apex:page controller="navi">
+    <apex:form >
+      <apex:pageBlock >
+        <apex:pageBlockButtons location="top">
+            <apex:inputSecret />
+         <apex:commandButton action="{!step2}" value="Next"/>
+        </apex:pageBlockButtons>
+     </apex:pageBlock>
+   </apex:form>
+</apex:page>
